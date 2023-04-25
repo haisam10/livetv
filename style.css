@@ -27,6 +27,7 @@ header main{
 }
 nav{
     display: var(--flex);
+    align-items: var(--al-it);
 }
 nav ul{
     list-style: none;
@@ -53,6 +54,12 @@ nav ul li a{
     padding: 10px;
     color: #fff;
 }
+i.fa-solid.fa-bars {
+    padding: 10px;
+}
+.dropdown{
+    display: none;
+}
 .area{
     width: 95%;
     margin: 0 auto;
@@ -73,16 +80,16 @@ nav ul li a{
     margin: 0px 16px;
 }
 
+
 @media screen and (max-width: 890px){
     main{
         width: 100%;
     }
     header main {
-        display: block;
         text-align: center;
     }
     nav {
-        display: block;
+        display: none;
     }
     iframe {
         width: 100%;
@@ -92,5 +99,26 @@ nav ul li a{
     }
     .hero-area {
         display: block;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        background-color: #272727;
+        color: #fff;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      ul {
+        list-style: none;
+    }
+    ul li a{
+        text-decoration: none;
+        color: #fff;
     }
 }
