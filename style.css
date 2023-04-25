@@ -44,10 +44,11 @@ nav ul li:hover{
     background-color: #ff1010;
 }
 .active{
-    border: 2px solid rgb(212, 38, 38);
-    padding: 12px;
     border-radius: 5px;
     transition: 0.5s;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
 }
 nav ul li a{
     text-decoration: none;
@@ -79,7 +80,21 @@ i.fa-solid.fa-bars {
     border-radius: 50%;
     margin: 0px 16px;
 }
-
+.animation {
+    width: 100%;
+    height: 2px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 10000;
+    border:1px solid black;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    50%  {background-color:blue; left:00px; right:00px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
 
 @media screen and (max-width: 890px){
     main{
@@ -111,7 +126,7 @@ i.fa-solid.fa-bars {
         background-color: #272727;
         color: #fff;
         min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
         z-index: 1;
         right: 0;
         text-align: start;
@@ -122,6 +137,7 @@ i.fa-solid.fa-bars {
       }
       ul {
         list-style: none;
+        padding-bottom: 10px;
     }
     ul li a{
         text-decoration: none;
