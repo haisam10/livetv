@@ -130,6 +130,7 @@ i.fa-solid.fa-bars {
         z-index: 1;
         right: 0;
         text-align: start;
+        border-radius: 10px;
       }
       
       .dropdown:hover .dropdown-content {
